@@ -1,0 +1,241 @@
+/* TaxLegal Website - Animations */
+
+/* Keyframe Animations */
+@keyframes arcAnimation {
+    0%, 100% { transform: rotate(-5deg) scale(1); }
+    50% { transform: rotate(-3deg) scale(1.05); }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px) translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(-50%);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-120%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroGradient {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+}
+
+@keyframes textGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Performance / Utility: encourage GPU acceleration and smooth transitions */
+.reveal,
+.stagger-item,
+.slide-in-left,
+.slide-in-right,
+.scale-in,
+.fade-in {
+    opacity: 0;
+    transform: translate3d(0,20px,0);
+    will-change: opacity, transform;
+    transition: opacity 0.9s var(--transition-smooth), transform 0.9s var(--transition-smooth);
+}
+
+.reveal.visible,
+.stagger-item.visible,
+.slide-in-left.visible,
+.slide-in-right.visible,
+.scale-in.visible,
+.fade-in.visible {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/* Reduce motion for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .stagger-item,
+    .slide-in-left,
+    .slide-in-right,
+    .scale-in,
+    .fade-in {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Enhanced Animations - Professional Style */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: all 1s var(--transition-smooth);
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(120px);
+    transition: all 1s var(--transition-smooth);
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 1s var(--transition-smooth);
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Parallax Effect */
+.parallax {
+    transition: transform 0.6s var(--transition-smooth);
+}
+
+/* Staggered Animations */
+.stagger-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s var(--transition-smooth);
+}
+
+.stagger-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger-item:nth-child(1) { transition-delay: 0.1s; }
+.stagger-item:nth-child(2) { transition-delay: 0.2s; }
+.stagger-item:nth-child(3) { transition-delay: 0.3s; }
+.stagger-item:nth-child(4) { transition-delay: 0.4s; }
+.stagger-item:nth-child(5) { transition-delay: 0.5s; }
+.stagger-item:nth-child(6) { transition-delay: 0.6s; }
+.stagger-item:nth-child(7) { transition-delay: 0.7s; }
+.stagger-item:nth-child(8) { transition-delay: 0.8s; }
+
+/* Advanced Hover Effects */
+.hover-lift {
+    transition: all 0.5s var(--transition-smooth);
+}
+
+.hover-lift:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Reveal Animation */
+.image-reveal {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-reveal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+    transition: left 1s var(--transition-smooth);
+}
+
+.image-reveal:hover::before {
+    left: 100%;
+}
+
+/* Text Gradient Animation */
+.text-gradient {
+    background: linear-gradient(90deg, var(--logo-blue), var(--logo-red), var(--logo-blue));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textGradient 4s var(--transition-smooth) infinite;
+}
+
+/* Pulse Animation */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Floating Animation */
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Rotate Animation */
+.rotate {
+    animation: rotate 20s linear infinite;
+}

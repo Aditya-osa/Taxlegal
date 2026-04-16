@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaxLegal - Professional Services for Taxation and Legal Matters</title>
+  <meta name="description"
+    content="Specializing in Tax Litigation, Appeals, Search and Seizure Cases, IT Litigation, GST Litigation, GST Criminal Court Cases, and GST Arrest Matters" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-low": "#f2f4f6",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#40000a",
+            "on-surface-variant": "#44474e",
+            "on-secondary-fixed-variant": "#920023",
+            "tertiary-fixed": "#cfe6f2",
+            "primary": "#000a1e",
+            "inverse-surface": "#2d3133",
+            "surface-container-high": "#e6e8ea",
+            "surface-container-highest": "#e0e3e5",
+            "on-background": "#191c1e",
+            "on-secondary": "#ffffff",
+            "secondary": "#b71032",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#768c97",
+            "surface-tint": "#465f88",
+            "on-primary-fixed-variant": "#2d476f",
+            "on-surface": "#191c1e",
+            "error-container": "#ffdad6",
+            "outline-variant": "#c4c6cf",
+            "tertiary-fixed-dim": "#b4cad6",
+            "surface-dim": "#d8dadc",
+            "primary-fixed": "#d6e3ff",
+            "on-secondary-container": "#fffbff",
+            "outline": "#74777f",
+            "secondary-container": "#da3148",
+            "surface-container": "#eceef0",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#ffb3b4",
+            "surface": "#f8f9fb",
+            "primary-container": "#002147",
+            "on-tertiary-fixed": "#071e27",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#aec7f6",
+            "secondary-fixed": "#ffdad9",
+            "tertiary-container": "#0e242d",
+            "background": "#f8f9fb",
+            "tertiary": "#000c13",
+            "surface-variant": "#e0e3e5",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#354a53",
+            "surface-bright": "#f8f9fb",
+            "on-primary-fixed": "#001b3d",
+            "on-primary-container": "#708ab5",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#eff1f3",
+            "inverse-primary": "#aec7f6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Newsreader", "serif"],
+            "body": ["Inter", "sans-serif"],
+            "label": ["Inter", "sans-serif"]
+          }
+        },
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/services.css" />
+  <style>
+    /* Vertical Social Media Sidebar */
+    .social-sidebar {
+      position: fixed;
+      top: 30%;
+      right: 20px;
+      transform: translateY(-50%);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .social-sidebar a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 51, 102, 0.9);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+    }
+
+    .social-sidebar a:hover {
+      background: #b71032;
+      border-color: #ffffff;
+      transform: translateX(-5px) scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Hide social sidebar on mobile */
+    @media (max-width: 768px) {
+      .social-sidebar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface">
+  <!-- Vertical Social Media Sidebar -->
+  <div class="social-sidebar">
+    <a href="#" class="social-icon">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="#" class="social-icon">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10">
+
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="assets/images/team/logo.png" alt="TaxLegal Logo" class="h-11 object-contain">
+        </a>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex justify-center flex-1 items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-secondary transition-colors duration-200">Home</a>
+          <a href="services.html" class="hover:text-secondary transition-colors duration-200">Services</a>
+          <a href="about.html" class="hover:text-secondary transition-colors duration-200">About Us</a>
+          <a href="https://www.incometaxindia.gov.in/income-tax-calculator"
+            class="hover:text-secondary transition-colors duration-200">
+            Tax Calculator
+          </a>
+          <a href="internship.html" class="hover:text-secondary transition-colors duration-200">Careers</a>
+          <a href="contact.html" class="hover:text-secondary transition-colors duration-200">Contact Us</a>
+        </nav>
+        <!-- Contact (optional inside header) -->
+        <div class="hidden md:flex items-center gap-4 text-sm font-medium">
+          <a href="tel:+919869005068" class="hover:text-secondary transition-colors duration-200">
+            +91-9869005068
+          </a>
+          <a href="mailto:info@taxlegal.in" class="hover:text-secondary transition-colors duration-200">
+            info@taxlegal.in
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+
+
+          <h2 class="reveal stagger-1">
+            Our Practice Areas.
+            <span>Comprehensive Solutions.</span>
+            Expert Guidance.
+          </h2>
+
+          <p class="reveal stagger-2">
+            With over two decades of experience, TaxLegal provides comprehensive solutions across taxation, regulatory
+            compliance, and legal matters. Our expert team delivers structured, well-considered, and legally sound
+            solutions tailored to your business needs.
+          </p>
+
+          <div class="hero-actions reveal stagger-3">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="block mt-9 md:text-4xl lg:text-5xl font-extrabold lg:whitespace-nowrap"
+              style="font-family: 'Georgia', 'Times New Roman', serif; color: #ffffff; text-shadow: none;">
+              Practice Areas
+            </span>
+            <div class="reveal-left stagger-2"
+              style="font-size: 1.25rem; color: rgba(255,255,255,0.9); font-weight: 500;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: lighter;">
+              A redesigned services experience with clarity, hierarchy and motion.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="services-grid mb-12">
+          <article class="service-card reveal stagger-1">
+            <div class="service-icon"><img src="assets/icons/Tax-litigation.png" alt="Tax Litigation"
+                class="service-icon-img" /></div>
+            <h3>Tax Litigation</h3>
+            <p>Direct & Indirect Tax Expert</p>
+            <ul class="service-list">
+              <li>Income Tax</li>
+              <li>GST</li>
+              <li>MVAT / P.T. (Professional Tax)</li>
+              <li>Service Tax & LBT (Local Body Tax)</li>
+              <li>EOW / Arbitration</li>
+              <li>Cyber Fraud</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal stagger-2">
+            <div class="service-icon">
+              <img src="assets/icons/audit.png" alt="Accounts & Audit Support"
+                class="service-icon-img" />
+            </div>
+            <h3>Accounts & Audit Support</h3>
+            <p>Structured accounting support with a focus on statutory readiness and accuracy.</p>
+            <ul class="service-list">
+              <li>Accounts Outsourcing</li>
+              <li>Maintain Complete Computerized Accounting</li>
+              <li>Ensure Statutory & Tax Compliances as per Government Norms</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal stagger-3">
+            <div class="service-icon">
+              <img src="assets/icons/Startup-company.png" alt="Startup Company Formation"
+                class="service-icon-img" />
+            </div>
+            <h3>Startup Company Formation</h3>
+            <p>Ideal for founders, new ventures and expanding firms that need a compliant start.</p>
+            <ul class="service-list">
+              <li>Proprietorship Registration</li>
+              <li>Partnership Firm Registration</li>
+              <li>LLP Registration under Companies Act</li>
+              <li>Nidhi Company Registration</li>
+              <li>Producer Company Registration</li>
+              <li>Trust Registration under Section 8 Company Registration Act</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal stagger-1">
+            <div class="service-icon">
+              <img src="assets/icons/registration.png" alt="Registration Services"
+                class="service-icon-img" />
+            </div>
+            <h3>Registration Services</h3>
+            <p>Streamlined setup for statutory and business registrations across major requirements.</p>
+            <ul class="service-list">
+              <li>MSME Registration</li>
+              <li>TAN Registration</li>
+              <li>GST Registration</li>
+              <li>FSSAI Registration</li>
+              <li>Import Export Code</li>
+              <li>Digital signature</li>
+              <li>Udyog Aadhar</li>
+              <li>Trade Licenses</li>
+             
+            </ul>
+          </article>
+
+          <article class="service-card reveal stagger-2">
+            <div class="service-icon"><img src="assets/icons/tax.png" alt="Direct Taxation"
+                class="service-icon-img" /></div>
+            <h3>Direct Taxation</h3>
+            <p>End-to-end support for tax compliance, returns and notice-based responses.</p>
+            <ul class="service-list">
+              <li>Income Tax</li>
+              <li>TAN Number Registration</li>
+              <li>Filling of Returns of Income Tax, TDS</li>
+              <li>Assessment & Audit</li>
+              <li>Liaisoning with Government Authorities</li>
+              <li>Capital Gain</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal stagger-3">
+            <div class="service-icon"><img src="assets/icons/tax-return.png" alt="Indirect Taxation"
+                class="service-icon-img" /></div>
+            <h3>Indirect Taxation</h3>
+            <p>GST and indirect tax services designed for operational clarity and lower compliance friction.</p>
+            <ul class="service-list">
+              <li>GST</li>
+              <li>Pre-Implementation Support</li>
+              <li>Impact Analysis</li>
+              <li>Enrolment & Registration</li>
+              <li>Returns and Payments</li>
+              <li>Advisory and Consultancy</li>
+              <li>Opinion on Laws</li>
+              <li>GST Audit</li>
+              <li>Assessments</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal stagger-1">
+            <div class="service-icon"><img src="assets/icons/Corporate-Compliance.png" alt="Corporate Compliance"
+                class="service-icon-img" /></div>
+            <h3>Corporate Compliance</h3>
+            <p>Consistent support for company-level statutory and governance-related updates.</p>
+            <ul class="service-list">
+              <li>Register office changes</li>
+              <li>Add Director</li>
+              <li>Remove Director</li>
+              <li>Increase Authorised capital</li>
+              <li>Share Transfer</li>
+              <li>MOA Amendment</li>
+              <li>Winding up company</li>
+              <li>Winding up LLP</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal stagger-2">
+            <div class="service-icon"><img src="assets/icons/payroll.png" alt="Payroll Compliance"
+                class="service-icon-img" /></div>
+            <h3>Payroll Compliance</h3>
+            <p>Compliance support for salary-linked registrations and statutory return processes.</p>
+            <ul class="service-list">
+              <li>Payroll advisory support</li>
+              <li>PF Registration</li>
+              <li>PF Return filing</li>
+              <li>ESIC Registration</li>
+              <li>ESIC Return filing</li>
+            </ul>
+          </article>
+
+        
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Visual Spacer -->
+
+    <div class="section-spacer"></div>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <div>
+
+            <span class="block mt-9 md:text-4xl lg:text-5xl font-extrabold lg:whitespace-nowrap"
+              style="font-family: 'Georgia', 'Times New Roman', serif; color: #1e3a61; text-shadow: none; margin-bottom: 12px;">
+              How We Work
+            </span>
+            <div class="reveal-left stagger-2"
+              style="font-size: 1.25rem; color: #5b6b7c; font-weight: lighter;font-family: Georgia, 'Times New Roman', Times, serif;">
+              A simple, high-trust process that feels professional from the first click.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="process-grid mb-12">
+
+          <div class="process-panel reveal-left">
+            <h3>Professional Standards</h3>
+            <div class="section-line"></div>
+            <p>
+              The practice adheres to applicable professional standards, ethical obligations,
+              and regulatory requirements.
+              All matters are handled with due regard to confidentiality
+              and in accordance with established legal and procedural frameworks.
+            </p>
+
+          </div>
+
+          <div class="process-steps reveal-right">
+            <div class="step">
+              <div class="step-no">01</div>
+              <div>
+                <h4>Understanding Requirements</h4>
+                <p>Initial understanding of the matter based on information and documents provided.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-no">02</div>
+              <div>
+                <h4>Review & Assessment
+                </h4>
+                <p>Evaluation of applicable legal and tax provisions, along with procedural requirements.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-no">03</div>
+              <div>
+                <h4> Engagement & Representation
+                </h4>
+                <p>Assistance in documentation, filings, and representation before appropriate authorities, where
+                  required.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-no">04</div>
+              <div>
+                <h4>Ongoing Support
+                </h4>
+                <p>Continued assistance in compliance, follow-ups, and related proceedings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>About TaxLegal</h3>
+          <p>Established in 1996, TaxLegal provides tax and legal services, offering solutions for businesses across
+            India.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3><i class="fas fa-cogs"></i> Our Services</h3>
+          <ul>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Startup Company Formation</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Registration Services</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Accounts & Audit</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Direct Taxation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3><i class="fas fa-link"></i> Quick Links</h3>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+
+            <li><a href="https://taxlegal.bitrix24.site/"><i class="fas fa-chevron-right"></i> Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-details">
+                <strong>Office Address</strong>
+                <span><a href="https://maps.google.com?q=401-404,PrabhatCenter,CBD-Belapur,NaviMumbai-400614"
+                    target="_blank">401-404, Prabhat Center, CBD-Belapur, Navi Mumbai - 400614</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div class="contact-details">
+                <strong>Call Us</strong>
+                <span><a href="tel:+919819705068">+91-9819705068</a> / <a
+                    href="tel:+919869005068">+91-9869005068</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-details">
+                <strong>Email Us</strong>
+                <span><a href="mailto:info@taxlegal.in">info@taxlegal.in</a></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <div class="footer-copyright">
+            <p>&copy; 2024 TaxLegal. All rights reserved.</p>
+          </div>
+          <div class="footer-bottom-links">
+            <a href="disclaimer.html">Disclaimer</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById("siteHeader");
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileNav = document.getElementById("mobileNav");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+    });
+
+    document.querySelectorAll(".mobile-nav a").forEach(link => {
+      link.addEventListener("click", () => mobileNav.classList.remove("show"));
+    });
+
+    const revealItems = document.querySelectorAll(
+      ".reveal, .reveal-left, .reveal-right, .reveal-scale"
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: "0px 0px -40px 0px"
+    });
+
+    revealItems.forEach(item => observer.observe(item));
+
+    // Slight parallax effect for hero panel
+    const heroPanel = document.querySelector(".hero-panel");
+    window.addEventListener("mousemove", (e) => {
+      if (window.innerWidth < 992 || !heroPanel) return;
+
+      const x = (e.clientX / window.innerWidth - 0.5) * 10;
+      const y = (e.clientY / window.innerHeight - 0.5) * 10;
+
+      heroPanel.style.transform = `translate3d(${x * 0.45}px, ${y * 0.45}px, 0)`;
+    });
+
+    window.addEventListener("mouseleave", () => {
+      if (heroPanel) heroPanel.style.transform = "translate3d(0,0,0)";
+    });
+  </script>
+</body>
+
+</html>

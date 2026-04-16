@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TaxLegal | Tax. Law. Strategy.</title>
+<!-- Typography -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#dec397",
+                    "surface-variant": "#e5e2e1",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "surface-bright": "#fcf9f8",
+                    "surface-dim": "#dcd9d9",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#410005",
+                    "on-secondary-fixed-variant": "#564422",
+                    "on-primary-container": "#76849f",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "inverse-on-surface": "#f3f0ef",
+                    "tertiary": "#000000",
+                    "secondary-container": "#fbdfb1",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-container-high": "#ebe7e7",
+                    "secondary": "#705b38",
+                    "on-surface": "#1c1b1b",
+                    "surface": "#fcf9f8",
+                    "tertiary-fixed-dim": "#ffb3af",
+                    "on-primary-fixed-variant": "#39475f",
+                    "primary-container": "#0d1c32",
+                    "surface-tint": "#515f78",
+                    "primary": "#000000",
+                    "tertiary-fixed": "#ffdad7",
+                    "inverse-primary": "#b9c7e4",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#d6e3ff",
+                    "secondary-fixed": "#fbdfb1",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-container": "#f0edec",
+                    "on-primary-fixed": "#0d1c32",
+                    "outline-variant": "#c5c6cd",
+                    "on-tertiary-container": "#f14247",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#76613d",
+                    "on-tertiary-fixed-variant": "#930018",
+                    "background": "#fcf9f8",
+                    "on-background": "#1c1b1b",
+                    "on-surface-variant": "#44474d",
+                    "on-secondary-fixed": "#271900",
+                    "outline": "#75777e",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#410005"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Manrope"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-overlap {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        /* Vertical Social Media Sidebar */
+        .social-sidebar {
+            position: fixed;
+            top: 30%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .social-sidebar a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 51, 102, 0.9);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        .social-sidebar a:hover {
+            background: #b71032;
+            border-color: #ffffff;
+            transform: translateX(-5px) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hide social sidebar on mobile */
+        @media (max-width: 768px) {
+            .social-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30">
+<!-- Vertical Social Media Sidebar -->
+<div class="social-sidebar">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-stone-50/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-serif text-slate-900 dark:text-stone-50 tracking-tight">TaxLegal</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-serif newsreader tracking-tight text-slate-900 dark:text-stone-50 border-b border-amber-700/50 pb-1" href="#">Expertise</a>
+<a class="font-serif newsreader tracking-tight text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-stone-50 transition-colors" href="#">Leadership</a>
+<a class="font-serif newsreader tracking-tight text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-stone-50 transition-colors" href="#">Insights</a>
+<a class="font-serif newsreader tracking-tight text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-stone-50 transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 bg-primary text-on-primary font-label text-[0.75rem] uppercase tracking-widest hover:bg-primary-container transition-all">Consultation</button>
+</div>
+</div>
+<div class="bg-stone-200/50 dark:bg-slate-800/50 h-[1px]"></div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-b from-primary to-primary-container text-on-primary">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover grayscale" data-alt="monochrome architectural detail of a classical columns and high ceiling in a prestigious institutional building with dramatic light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjwBUvzP18fImIczhmlQyh8dWvIwJeViKJgykPXto58iXQOI_FtUXuXlMIEXxgnMaJCWiHecFnLjvPW3OTujyQrJ1rcpYD3ivbmehWEgz37mSwNllmrfJ9eLqS3tRQF492NRiaWa1PkJLBqpIfKfm88lCRzoOdTmeyd3rgGVnfP6Kk6tp85v8buaTDp6bqxmCYpGFkMCzOmLFxl_m8mb3HqOVr3O2oew66PPfqCX3tYus3hFp0agdW_xXcJLIcbu_s3ri8efsi354"/>
+</div>
+<div class="container max-w-7xl mx-auto px-8 relative z-10">
+<div class="max-w-4xl">
+<span class="font-label text-[0.75rem] uppercase tracking-[0.3em] text-secondary mb-6 block">The Sovereign Editorial</span>
+<h1 class="font-headline text-[3.5rem] md:text-[5.5rem] leading-[1.1] tracking-tight mb-8 serif-overlap">
+                        Tax. Law. <br/> <span class="italic text-secondary-fixed-dim">Strategy.</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-primary-container max-w-2xl leading-relaxed opacity-90">
+                        Bridging the gap between regulatory rigor and commercial ambition with architectural precision.
+                    </p>
+<div class="mt-12 flex gap-6">
+<button class="bg-secondary text-on-secondary px-10 py-4 font-label tracking-widest text-xs uppercase hover:brightness-110 transition-all">Explore Expertise</button>
+<button class="border border-outline-variant/30 text-on-primary px-10 py-4 font-label tracking-widest text-xs uppercase hover:bg-on-primary/5 transition-all">Our Legacy</button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+<span class="font-label text-[10px] uppercase tracking-widest">Scroll to navigate</span>
+<span class="material-symbols-outlined text-sm animate-bounce">expand_more</span>
+</div>
+</section>
+<!-- Who We Are -->
+<section class="py-32 bg-surface">
+<div class="container max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5">
+<div class="relative">
+<img class="w-full aspect-[4/5] object-cover" data-alt="a professional lawyer in a sharp dark suit adjusting his cufflink in a moody well-lit mahogany office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLDvG8Kt6ubdQ0mF_lLyyyIYwR5OSLzYN03GtYq693zlg8LfjmYg_tRtR04gTI1-WezTyafTQetjSseWi_KGxCjDKoYZ6lAd8vfBH4UQKuZQIWnPlfyF32JVyUemiaEJyCvdWI1-zkuiSesZ-vtEmROnOySAzAUMuzviqYzxMupAcj25qDXKm5w7yXD7iJcP1ssfBPKdWaeYQFyRUxbb61nHYZ1WAcLkENNAWc2wjPOmq76WArLlD2tMhN2V0-9VKEDufZQyw8n_E"/>
+<div class="absolute -bottom-8 -right-8 bg-surface-container p-12 hidden lg:block">
+<span class="font-headline text-5xl text-secondary block mb-2 italic">1998</span>
+<span class="font-label text-[10px] uppercase tracking-widest opacity-60">Established Authority</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7">
+<h2 class="font-headline text-[2.5rem] mb-8 leading-tight">Quiet Authority. <br/>Precision Results.</h2>
+<div class="space-y-6 text-on-surface-variant font-body leading-loose text-lg">
+<p>TaxLegal is not merely a consultancy; it is an architectural approach to the legal and financial framework of your enterprise. We operate at the intersection of complex tax litigation and strategic corporate structuring.</p>
+<p>With a foundation built on decades of Indian regulatory expertise, we provide the clarity required to navigate the sophisticated landscape of modern commerce.</p>
+</div>
+<div class="mt-12 pt-12 border-t border-outline-variant/20 grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-secondary mb-2">Focus</h4>
+<p class="font-headline text-xl">Commercial Integrity</p>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-secondary mb-2">Philosophy</h4>
+<p class="font-headline text-xl">The Sovereign Mandate</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Practice Areas (Bento Grid Style) -->
+<section class="py-32 bg-surface-container-low">
+<div class="container max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-[2.5rem] text-center">Spheres of Expertise</h2>
+<div class="w-12 h-1 bg-secondary mx-auto mt-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Direct/Indirect Taxation -->
+<div class="md:col-span-2 group bg-surface p-12 flex flex-col justify-between min-h-[400px] border border-outline-variant/10 hover:border-secondary/30 transition-all">
+<div class="flex justify-between items-start">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="account_balance">account_balance</span>
+</div>
+<span class="font-label text-[10px] tracking-widest opacity-40 uppercase">Taxation Architecture</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl mb-4 group-hover:text-secondary transition-colors">Direct &amp; Indirect Taxation</h3>
+<p class="font-body text-on-surface-variant max-w-md leading-relaxed">Comprehensive litigation, compliance, and advisory services for GST, Income Tax, and International Taxation treaties.</p>
+</div>
+</div>
+<!-- Startup Formation -->
+<div class="group bg-primary p-12 text-on-primary flex flex-col justify-between min-h-[400px] hover:bg-primary-container transition-all">
+<div class="w-12 h-12 border border-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl mb-4 text-secondary-fixed-dim">Startup Formation</h3>
+<p class="font-body text-sm opacity-70 leading-relaxed">Nurturing high-growth ventures from ideation to Series A, ensuring legal scalability and intellectual protection.</p>
+</div>
+</div>
+<!-- Accounts & Audit -->
+<div class="group bg-surface p-12 flex flex-col justify-between min-h-[400px] border border-outline-variant/10 hover:border-secondary/30 transition-all">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="calculate">calculate</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl mb-4">Accounts &amp; Audit</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Systematic verification of financial integrity through forensic auditing and advanced bookkeeping protocols.</p>
+</div>
+</div>
+<!-- Corporate Compliance -->
+<div class="md:col-span-2 group bg-secondary p-12 text-on-secondary flex flex-col justify-between min-h-[400px] hover:brightness-110 transition-all">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-on-secondary text-4xl" data-icon="gavel">gavel</span>
+<span class="font-label text-[10px] tracking-widest text-on-secondary/60 uppercase">Governance</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl mb-4">Corporate Compliance</h3>
+<p class="font-body text-on-secondary/80 max-w-lg leading-relaxed">Adherence to the Companies Act, SEBI regulations, and intricate secretarial standards for public and private entities.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Team -->
+<section class="py-32 bg-surface">
+<div class="container max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-[2.5rem] leading-tight">The Council.</h2>
+<p class="font-body text-on-surface-variant mt-4">A collective of senior advocates and chartered accountants dedicated to sovereign excellence.</p>
+</div>
+<a class="font-label text-xs uppercase tracking-widest text-secondary border-b border-secondary/30 pb-1" href="#">View Full Directory</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
+<!-- Adv. Suresh Sharma -->
+<div class="text-center group">
+<div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="professional portrait of senior advocate Suresh Sharma in a formal suit against a dark grey background" src="assets/images/team/image.png"/>
+</div>
+<h4 class="font-headline text-xl mb-1">Adv. Suresh Sharma</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Senior Counsel</p>
+</div>
+<!-- Adv. Santosh Shukla -->
+<div class="text-center group">
+<div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="professional headshot of Adv. Santosh Shukla looking confident in a tailored blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLsiKlT5P1cqShdvEZkY72cCui4Nf-W-isqQGvg-oe7emiISkWYLYOKg43Hr0z6CmiZxXl9IZo7Klxs-2ovwF3e4DWThAcjf3iugzYQ4Fefi2c2hzsnjqGgZYxevziU2yzuIdlxrKjAqI3IF7BLmqTVWe36OhVyDk0A8uqZvhT7TtVpm7-aV-CaWFrk5dCk8Vqdwiewup-_ONlgG5HmOte98dkUyvwKv8m-KQ9nTiBVkHln4sBFVONhiXXMSh83nQWvo9djYtGBGI"/>
+</div>
+<h4 class="font-headline text-xl mb-1">Adv. Santosh Shukla</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Tax Strategist</p>
+</div>
+<!-- Adv. Varun Sharma -->
+<div class="text-center group">
+<div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="portrait of a young professional advocate Varun Sharma with a modern executive look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIOWc_Ki8FkDWGB3bP8h3LfDfh2AR2H6WcNeZkzoOkBXPb_FrNqGGOmB3nWcMBGF6Rj-x9rI-2qc3LnaU8dOGbEE1uhXeiorahXt6B3EeLiE8h7BV999-CD2Xa-tMBz0SrFdNOdK_1iVooS2CfQ_NJSozPx5NjwP2zETgcjlhA0MOFbb3dSjM3g2km53g-8HcLotz-rCGoHrO8k4fF2TYwj3VVXjTveQ3vHmh9M8NhvID7jTrF352MAurYF_OCQjgjPFTugx24tds"/>
+</div>
+<h4 class="font-headline text-xl mb-1">Adv. Varun Sharma</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Corporate Litigator</p>
+</div>
+<!-- Sanjay Dhadich -->
+<div class="text-center group">
+<div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="professional portrait of Sanjay Dhadich, an expert in legal audit and compliance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGIasHWfxJrOHV7TxqJltZFHl89TqBOhSKN71cUDhqXd5my0054cfAS_YEEBoSwRS2wcChNLjArZW9at4CRA49NwaL3OFAJbxwcA1D3vnKLP4pdpiP0Qtsj_zpz3nLlHgWU5-UKFzQi1zKmgPXKWxt4BCqAUtskd-WSHBBAm0aNcypAoKXIgKdaXHBrw9wARdwzgvCkKCu17CMl4hvUj8OvVd8JuEs2VHxEy3MmR1jaIEoizRD28HD3iAHxR-BqOv4DmGhjmc4nxM"/>
+</div>
+<h4 class="font-headline text-xl mb-1">Sanjay Dhadich</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Compliance Head</p>
+</div>
+<!-- CA Narendra Rajput -->
+<div class="text-center group">
+<div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="professional portrait of CA Narendra Rajput with a technical and trustworthy demeanor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPYXgmnvS64uk2-dF-PjTa2J-PW9arJVt2-k7r79RP8S34k4c1Zlc-K_FiNzPXJWCCZOtoH6M-WHsJDpdk5gEaTPVigyLWFFbMiDRuIOsDy90R3ZJN4HAtXY8itkkNPolepUfWFeR7djGYibZnT7SjbZyDCjjRsmmAZyGLH8DDu55vJGNyNNu-VgG3XDAvML6u3gMX2z_zdfIQhM4FvzwZO9EVI-Vz-Xh8qRgXvRIgIgvjmHR6lSdiFbXBMeU-KsXXYIIG9fEfjjE"/>
+</div>
+<h4 class="font-headline text-xl mb-1">CA Narendra Rajput</h4>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Chief Auditor</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Compliance / Disclaimer -->
+<section class="py-20 bg-surface-container-highest border-y border-outline-variant/10">
+<div class="container max-w-5xl mx-auto px-8">
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="info">info</span>
+<h3 class="font-headline text-2xl mb-4">Mandatory Regulatory Disclaimer</h3>
+<div class="font-body text-sm text-on-surface-variant leading-relaxed space-y-4 max-w-3xl">
+<p>As per the rules of the Bar Council of India, this website is not intended to be a source of advertising or solicitation and the contents of the website should not be construed as legal advice.</p>
+<p>The user acknowledges that the information provided on TaxLegal.in is of a general nature and is made available only at the specific request of the user. TaxLegal shall not be liable for any consequences of any action taken by the user relying on material/information provided under this website.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact / Office Section -->
+<section class="py-32 bg-primary text-on-primary">
+<div class="container max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-24">
+<div>
+<h2 class="font-headline text-4xl mb-12">The Principal Office.</h2>
+<div class="space-y-12">
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-secondary mb-4">Location</h4>
+<p class="font-headline text-2xl leading-relaxed">
+                                    3rd Floor, Chambers of Commerce,<br/>
+                                    M.G. Road, Bangalore, 560001
+                                </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-secondary mb-4">Inquiries</h4>
+<p class="font-body text-lg">+91 80 4123 9876</p>
+</div>
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-secondary mb-4">Correspondence</h4>
+<p class="font-body text-lg">counsel@taxlegal.in</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative h-[400px] bg-primary-container overflow-hidden group">
+<div class="absolute inset-0 opacity-40 group-hover:scale-105 transition-transform duration-[3s]">
+<img class="w-full h-full object-cover" data-alt="aerial view of a prestigious commercial office building in Bangalore with modern architectural glass facets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVJ47Be9xSsBumvIivplcSsK2SiQWw1kPEZNYYVhiLA5DJihuYH0pVVsvRd_KRF-H_-YBFFLeq7aku6O560RoSw1Ocx88Gpq_i-dn6C0ffGoaQmtoqW1IT7YI4l81R40P_p4-L0EvCElT52iQFCNOKMKORin5Nnozse0SbgQ5JU-Yl4giFAS0UuZfdQGcSzYrfyllD7ClchRCm2wD6dzb-GVQPpQgwhbaG6Bho0N06TXhcZ8voWj3UMQ0OAcRD8a-vihQOKFrHOFs"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-surface/10 backdrop-blur-md p-8 border border-on-primary/10">
+<span class="font-label text-xs uppercase tracking-widest text-on-primary mb-2 block text-center">Interactive Map</span>
+<button class="bg-secondary text-on-secondary px-8 py-3 text-[10px] uppercase tracking-[0.2em]">View Location</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-black w-full border-t border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-start gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
+<div class="max-w-sm">
+<div class="text-xl font-serif text-stone-50 mb-4">TaxLegal</div>
+<p class="font-sans inter text-sm tracking-wide text-stone-400 dark:text-stone-500 leading-relaxed">
+                    © 2024 TaxLegal Consultancy. All rights reserved. Attorney Advertising. Prior results do not guarantee a similar outcome.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="flex flex-col gap-4">
+<h5 class="text-stone-200 font-label text-[10px] uppercase tracking-widest">Resources</h5>
+<a class="font-sans inter text-sm text-stone-500 hover:text-stone-300 transition-colors duration-200" href="#">Legal Notice</a>
+<a class="font-sans inter text-sm text-stone-500 hover:text-stone-300 transition-colors duration-200" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-stone-200 font-label text-[10px] uppercase tracking-widest">Company</h5>
+<a class="font-sans inter text-sm text-stone-500 hover:text-stone-300 transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-sans inter text-sm text-stone-500 hover:text-stone-300 transition-colors duration-200 text-amber-600 font-medium" href="#">Regulatory Disclosure</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-stone-200 font-label text-[10px] uppercase tracking-widest">Social</h5>
+<a class="font-sans inter text-sm text-stone-500 hover:text-stone-300 transition-colors duration-200" href="#">LinkedIn</a>
+<a class="font-sans inter text-sm text-stone-500 hover:text-stone-300 transition-colors duration-200" href="#">Twitter</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-stone-200 font-label text-[10px] uppercase tracking-widest">Ethics</h5>
+<p class="font-sans inter text-[10px] text-stone-600 uppercase leading-relaxed">Commitment to <br/>Professional Standards</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

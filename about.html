@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - TaxLegal</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-low": "#f2f4f6",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#40000a",
+            "on-surface-variant": "#44474e",
+            "on-secondary-fixed-variant": "#920023",
+            "tertiary-fixed": "#cfe6f2",
+            "primary": "#000a1e",
+            "inverse-surface": "#2d3133",
+            "surface-container-high": "#e6e8ea",
+            "surface-container-highest": "#e0e3e5",
+            "on-background": "#191c1e",
+            "on-secondary": "#ffffff",
+            "secondary": "#b71032",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#768c97",
+            "surface-tint": "#465f88",
+            "on-primary-fixed-variant": "#2d476f",
+            "on-surface": "#191c1e",
+            "error-container": "#ffdad6",
+            "outline-variant": "#c4c6cf",
+            "tertiary-fixed-dim": "#b4cad6",
+            "surface-dim": "#d8dadc",
+            "primary-fixed": "#d6e3ff",
+            "on-secondary-container": "#fffbff",
+            "outline": "#74777f",
+            "secondary-container": "#da3148",
+            "surface-container": "#eceef0",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#ffb3b4",
+            "surface": "#f8f9fb",
+            "primary-container": "#002147",
+            "on-tertiary-fixed": "#071e27",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#aec7f6",
+            "secondary-fixed": "#ffdad9",
+            "tertiary-container": "#0e242d",
+            "background": "#f8f9fb",
+            "tertiary": "#000c13",
+            "surface-variant": "#e0e3e5",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#354a53",
+            "surface-bright": "#f8f9fb",
+            "on-primary-fixed": "#001b3d",
+            "on-primary-container": "#708ab5",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#eff1f3",
+            "inverse-primary": "#aec7f6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Newsreader", "serif"],
+            "body": ["Inter", "sans-serif"],
+            "label": ["Inter", "sans-serif"]
+          }
+        },
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/about.css" />
+  <style>
+    /* Vertical Social Media Sidebar */
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    /* Parallax Effect */
+    .parallax-bg {
+      position: absolute;
+      inset: 0;
+      transform: translateZ(0);
+      will-change: transform;
+    }
+
+    .parallax-bg img {
+      width: 100%;
+      height: 120%;
+      object-fit: cover;
+      position: absolute;
+      top: -10%;
+      left: 0;
+      transition: transform 0.1s ease-out;
+    }
+
+    .social-sidebar {
+      position: fixed;
+      top: 30%;
+      right: 20px;
+      transform: translateY(-50%);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .social-sidebar a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 51, 102, 0.9);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-sidebar a:hover {
+      background: #b71032;
+      border-color: #ffffff;
+      transform: translateX(-5px) scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Hide social sidebar on mobile */
+    @media (max-width: 768px) {
+      .social-sidebar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+
+<body class="bg-surface font-body text-on-surface">
+  <!-- Vertical Social Media Sidebar -->
+ 
+  
+  <div class="social-sidebar">
+      <a href="#" class="social-icon">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fab fa-twitter"></i>
+    </a>
+   
+    <a href="#" class="social-icon">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" class="social-icon">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10">
+
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="assets/images/team/logo.png" alt="TaxLegal Logo" class="h-11 object-contain">
+        </a>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex justify-center flex-1 items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-secondary transition-colors duration-200">Home</a>
+          <a href="services.html" class="hover:text-secondary transition-colors duration-200">Services</a>
+          <a href="about.html" class="hover:text-secondary transition-colors duration-200">About Us</a>
+          <a href="https://www.incometaxindia.gov.in/income-tax-calculator"
+            class="hover:text-secondary transition-colors duration-200">
+            Tax Calculator
+          </a>
+          <a href="https://taxlegal.bitrix24.site/" class="hover:text-secondary transition-colors duration-200">Careers</a>
+          <a href="contact.html" class="hover:text-secondary transition-colors duration-200">Contact Us</a>
+        </nav>
+        <!-- Contact (optional inside header) -->
+        <div class="hidden md:flex items-center gap-4 text-sm font-medium">
+          <a href="tel:+919869005068" class="hover:text-secondary transition-colors duration-200">
+            +91-9869005068
+          </a>
+          <a href="mailto:info@taxlegal.in" class="hover:text-secondary transition-colors duration-200">
+            info@taxlegal.in
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- Hero -->
+  
+
+  <!-- Hero Section -->
+  <section class="relative h-[650px] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0 parallax-bg">
+      <img class="w-full h-full object-cover" data-alt="Modern law firm office interior with high ceilings, glass walls, and professional wooden architectural details in soft natural light" src="D:\Tax-legal\taxlegal\assets\images\team\banner-about.jpg"/>
+      <div class="absolute inset-0 bg-black/40 mix-blend-multiply"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent opacity-50"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+      <div class="max-w-3xl">
+        <h1 class="font-headline text-7xl md:text-8xl font-extrabold tracking-tighter text-white mb-6" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+          Precision
+          <span  style="color: #ffbf00;">&</span> <span style="color: #c63e45;">Expertise</span>.
+        </h1>
+        <p class="text-lg text-white/90 font-light leading-relaxed mb-8 max-w-2xl" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+          For informational purposes, our team provides professional tax and legal insights, assisting with regulatory and compliance matters in accordance with applicable laws and ethical standards.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main About -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left -->
+        <div>
+          <div class="about-text">
+            <h2 class="section-title">Precision & Expertise in Tax and Legal Advisory</h2>
+
+            <p>
+ Tax Legal is a professional advisory practice with experience spanning over three decades in taxation and legal services. Our work combines technical interpretation with practical application across diverse business and regulatory environments.
+  </p>
+            </p>
+
+            <p>
+              <strong>Chartered Accountants (CAs):</strong>
+              Handling accounting, financial reporting support, audit assistance, and taxation assignments in accordance with applicable statutory provisions.
+            </p>
+
+            <p>
+              <strong>Company Secretaries (CS):</strong>
+              Undertaking corporate regulatory compliances, statutory filings, and governance-related matters as prescribed under applicable laws.
+            </p>
+
+            <p>
+              <strong>Advocates:</strong>
+              Advising and representing clients in taxation and related proceedings before appropriate authorities, subject to applicable professional regulations.
+            </p>
+
+            <p>
+              All engagements are undertaken in accordance with applicable laws, ethical standards, and the professional regulations governing the respective disciplines. The information provided herein is for general informational purposes only and does not constitute legal advice or solicitation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right - Image -->
+        <div class="about-image">
+          <img src="assets/images/image.png" alt="About TaxLegal - Professional Tax and Legal Services">
+        </div>
+      </div>
+      <div class="values-section">
+        <h3 class="text-center text-2xl font-bold mb-8">Our Values</h3>
+
+        <div class="values-grid flex flex-wrap justify-center gap-8">
+          <div class="value-card text-center w-64">
+            <i class="fa-solid fa-scale-balanced text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold">Integrity</h4>
+            <p>Professional ethics and principled conduct in every engagement.</p>
+          </div>
+
+          <div class="value-card text-center w-64">
+            <i class="fa-solid fa-handshake text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold">Transparency</h4>
+            <p>Clear communication, structured process, and informed guidance.</p>
+          </div>
+
+          <div class="value-card text-center w-64">
+            <i class="fa-solid fa-shield-halved text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold">Excellence</h4>
+            <p>Precision, discipline, and consistency in legal and tax work.</p>
+          </div>
+
+          <div class="value-card text-center w-64">
+            <i class="fa-regular fa-compass text-3xl mb-4"></i>
+            <h4 class="text-lg font-semibold">Client Focus</h4>
+            <p>Solutions aligned with the client's context and objectives.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Width Vision Section -->
+      <div class="vision-section-full">
+        <div class="vision-image-full">
+          <img src="D:\Tax-legal\taxlegal\assets\images\team\hand-shake.png" alt="TaxLegal Team">
+          <div class="vision-overlay-full">
+            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Our mission</h3>
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif;"><strong>Professional integrity is not a
+                PROMISE </br>it is a DISCIPLINE.</p>
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Compliance reduces disputes; precision
+              resolves them.
+              In tax litigation, facts defend what strategy presents.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+
+
+      <section class="py-32 bg-surface">
+        <div class="container max-w-7xl mx-auto px-8">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+            <div class="max-w-2xl">
+              <h2 class="font-headline text-[2.5rem] leading-tight"
+                style="font-family: Georgia, 'Times New Roman', Times, serif;">Experienced Panel of Experts.</h2>
+              <p class="font-body text-on-surface-variant mt-4"
+                style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 20px;">A collective of senior
+                advocates and
+                chartered
+                accountants dedicated to sovereign excellence.</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
+            <!-- Adv. Suresh Sharma -->
+            <div class="text-center group">
+              <div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                  data-alt="professional portrait of senior advocate Suresh Sharma in a formal suit against a dark grey background"
+                  src="assets/images/team/image.png" />
+              </div>
+              <h4 class="font-headline text-xl mb-1">Adv. Suresh Sharma</h4>
+              <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">IT & GST
+                TAXATION MATTERS<br>
+                GST ARREST & COURT CASES</p>
+            </div>
+            <!-- Adv. Santosh Shukla -->
+            <div class="text-center group">
+              <div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                  data-alt="professional headshot of Adv. Santosh Shukla looking confident in a tailored blazer"
+                  src="assets/images/team/santosh-sir.png" />
+              </div>
+              <h4 class="font-headline text-xl mb-1">Adv. Santosh Shukla</h4>
+              <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">ADR |
+                MARITIME MATTERS | INSURANCE
+                CONSUMER | SOCIETY MATTERS</p>
+            </div>
+            <!-- Adv. Varun Sharma -->
+            <div class="text-center group">
+              <div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+                <img
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all/lh3.goo duration-700"
+                  data-alt="portrait of a young professional advocate Varun Sharma with a modern executive look"
+                  src="assets/images/team/varun-sharma.png" />
+              </div>
+              <h4 class="font-headline text-xl mb-1">Adv. Varun Sharma</h4>
+              <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">DIRECT & INDIRECT TAX EXPERT</p>
+            </div>
+            <!-- Sanjay Dhadich -->
+            <div class="text-center group">
+              <div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                  data-alt="professional portrait of Sanjay Dhadich, an expert in legal audit and compliance"
+                  src="assets/images/team/sanjay.jpg" />
+              </div>
+              <h4 class="font-headline text-xl mb-1">Sanjay Dhadich</h4>
+              <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">CS CORPORATE
+                LAWS | FOREIGN EXCHANGE LAWS | COMPANY FORMATION | ROC MATTER</p>
+            </div>
+            <!-- CA Narendra Rajput -->
+            <div class="text-center group">
+              <div class="aspect-[1/1.2] overflow-hidden bg-surface-container mb-6">
+                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                  data-alt="professional portrait of CA Narendra Rajput with a technical and trustworthy demeanor"
+                  src="assets/images/team/narendra.jpg" />
+              </div>
+              <h4 class="font-headline text-xl mb-1">CA Narendra Rajput</h4>
+              <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">CHARTERED
+                ACCOUNTANT - INCOME TAX AND AUDIT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="reach-box">
+        <h3>Reach Us</h3>
+        <p>401-404, Prabhat Center, CBD-Belapur, Navi Mumbai - 400614</p>
+        <p>+91-9819705068 / +91-9869005068</p>
+        <p>info@taxlegal.in / ss_tax@yahoo.com</p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>About TaxLegal</h3>
+          <p>Established in 1996, TaxLegal provides tax and legal services, offering solutions for businesses across
+            India.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3><i class="fas fa-cogs"></i> Our Services</h3>
+          <ul>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Startup Company
+                Formation</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Registration
+                Services</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Accounts & Audit</a>
+            </li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Direct Taxation</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3><i class="fas fa-link"></i> Quick Links</h3>
+          <ul>
+           <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                  <li><a href="https://taxlegal.bitrix24.site/"><i class="fas fa-chevron-right"></i> Careers</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3><i class="fas fa-map-marker-alt"></i> Contact Info</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-details">
+                <strong>Office Address</strong>
+                <span><a href="https://maps.google.com?q=401-404,PrabhatCenter,CBD-Belapur,NaviMumbai-400614" target="_blank">401-404, Prabhat Center, CBD-Belapur, Navi Mumbai - 400614</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div class="contact-details">
+                <strong>Call Us</strong>
+                <span><a href="tel:+919819705068">+91-9819705068</a> / <a href="tel:+919869005068">+91-9869005068</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-details">
+                <strong>Email Us</strong>
+                <span><a href="mailto:info@taxlegal.in">info@taxlegal.in</a></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <div class="footer-copyright">
+            <p>&copy; 2024 TaxLegal. All rights reserved.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/scroll-animations.js"></script>
+  <script>
+    // Parallax Effect
+    window.addEventListener('scroll', function() {
+      const parallaxBg = document.querySelector('.parallax-bg img');
+      if (parallaxBg) {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * 0.3;
+        parallaxBg.style.transform = `translateY(${rate}px)`;
+      }
+    });
+  </script>
+</body>
+
+</html>

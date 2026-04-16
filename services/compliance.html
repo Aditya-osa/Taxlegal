@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance Services - TaxLegal</title>
+    <meta name="description" content="Comprehensive tax compliance services including tax return preparation, regulatory compliance, and risk management for businesses and individuals.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="icon" href="../favicon.ico">
+    <style>
+        /* Vertical Social Media Sidebar */
+        .social-sidebar {
+            position: fixed;
+            top: 30%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .social-sidebar a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 51, 102, 0.9);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        .social-sidebar a:hover {
+            background: #b71032;
+            border-color: #ffffff;
+            transform: translateX(-5px) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hide social sidebar on mobile */
+        @media (max-width: 768px) {
+            .social-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Vertical Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader" class="loader"></div>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">TaxLegal</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html" class="active">Services</a></li>
+                <li><a href="../team/index.html">Team</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="https://www.incometaxindia.gov.in/income-tax-calculator" target="_blank" class="btn btn-primary">Tax Calculator</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Compliance Services</h1>
+            <p>Comprehensive tax compliance solutions to meet all regulatory requirements</p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="overview-content">
+                <h2>Reliable Tax Compliance & Risk Management</h2>
+                <p>Staying compliant with ever-changing tax laws and regulations is crucial for avoiding penalties and maintaining good standing with tax authorities. Our comprehensive compliance services ensure that all your tax obligations are met accurately and on time, while identifying potential risks before they become problems.</p>
+                
+                <div class="key-benefits">
+                    <div class="benefit">
+                        <div class="benefit-icon">✅</div>
+                        <h3>Full Compliance</h3>
+                        <p>Ensure complete compliance with all federal, state, and local tax requirements</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Risk Prevention</h3>
+                        <p>Proactive risk assessment and mitigation to prevent tax issues before they arise</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">📊</div>
+                        <h3>Accuracy Guaranteed</h3>
+                        <p>Precise preparation and filing with double-check processes to ensure accuracy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Services -->
+    <section class="compliance-services">
+        <div class="container">
+            <h2>Our Compliance Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-icon">📋</div>
+                    <div class="service-content">
+                        <h3>Tax Return Preparation</h3>
+                        <p>Professional preparation and filing of all types of tax returns for individuals, businesses, and organizations. We ensure accuracy, completeness, and timely filing.</p>
+                        <ul>
+                            <li>Individual income tax returns</li>
+                            <li>Corporate tax returns (1120, 1120-S)</li>
+                            <li>Partnership returns (1065)</li>
+                            <li>Trust and estate returns (1041)</li>
+                            <li>Nonprofit organization returns (990)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">🏛️</div>
+                    <div class="service-content">
+                        <h3>Regulatory Compliance</h3>
+                        <p>Comprehensive compliance management to ensure adherence to all applicable tax laws, regulations, and reporting requirements.</p>
+                        <ul>
+                            <li>Federal tax compliance</li>
+                            <li>State and local tax compliance</li>
+                            <li>International reporting requirements</li>
+                            <li>Industry-specific compliance</li>
+                            <li>Regulatory filing management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">🔍</div>
+                    <div class="service-content">
+                        <h3>Risk Assessment & Management</h3>
+                        <p>Proactive identification and assessment of tax risks, with strategies to mitigate potential issues and ensure ongoing compliance.</p>
+                        <ul>
+                            <li>Tax risk assessments</li>
+                            <li>Compliance gap analysis</li>
+                            <li>Internal control reviews</li>
+                            <li>Risk mitigation strategies</li>
+                            <li>Compliance monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">📊</div>
+                    <div class="service-content">
+                        <h3>Documentation & Reporting</h3>
+                        <p>Comprehensive documentation services and preparation of required reports to maintain compliance and support tax positions.</p>
+                        <ul>
+                            <li>Tax position documentation</li>
+                            <li>Transfer pricing documentation</li>
+                            <li>Contemporary documentation</li>
+                            <li>Regulatory report preparation</li>
+                            <li>Record retention management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">🌍</div>
+                    <div class="service-content">
+                        <h3>International Compliance</h3>
+                        <p>Specialized compliance services for international operations, including FATCA, CRS, and other cross-border reporting requirements.</p>
+                        <ul>
+                            <li>FATCA compliance</li>
+                            <li>CRS reporting</li>
+                            <li>Foreign account reporting (FBAR)</li>
+                            <li>International information returns</li>
+                            <li>Cross-border compliance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">🏢</div>
+                    <div class="service-content">
+                        <h3>Business Compliance</h3>
+                        <p>Comprehensive compliance services for businesses, including sales tax, payroll tax, and other business-specific tax obligations.</p>
+                        <ul>
+                            <li>Sales and use tax compliance</li>
+                            <li>Payroll tax compliance</li>
+                            <li>Employment tax reporting</li>
+                            <li>Business license compliance</li>
+                            <li>Annual report filing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Process -->
+    <section class="compliance-process">
+        <div class="container">
+            <h2>Our Compliance Process</h2>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-icon">📋</div>
+                    <h3>Information Gathering</h3>
+                    <p>We collect all necessary financial documents and information to ensure comprehensive compliance coverage.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">🔍</div>
+                    <h3>Analysis & Review</h3>
+                    <p>Thorough analysis of your tax situation and compliance requirements to identify all obligations.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">📝</div>
+                    <h3>Preparation & Filing</h3>
+                    <p>Accurate preparation and timely filing of all required tax returns and compliance documents.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">✅</div>
+                    <h3>Verification & Follow-up</h3>
+                    <p>Confirmation of filing and ongoing monitoring to ensure continued compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Benefits -->
+    <section class="compliance-benefits">
+        <div class="container">
+            <h2>Benefits of Professional Compliance Services</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Avoid Penalties</h3>
+                    <p>Prevent costly penalties and interest charges through accurate and timely filing.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⏰</div>
+                    <h3>Save Time</h3>
+                    <p>Focus on your business while we handle complex compliance requirements.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Peace of Mind</h3>
+                    <p>Rest easy knowing your compliance is in expert hands.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Strategic Planning</h3>
+                    <p>Use compliance insights for better financial and business planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Expertise -->
+    <section class="industry-expertise">
+        <div class="container">
+            <h2>Industry-Specific Compliance</h2>
+            <div class="industries-grid">
+                <div class="industry-item">
+                    <h3>🏥 Healthcare</h3>
+                    <p>Specialized compliance for healthcare providers, including HIPAA-related tax considerations and medical billing compliance.</p>
+                </div>
+                <div class="industry-item">
+                    <h3>💻 Technology</h3>
+                    <p>Compliance solutions for tech companies, including software licensing, R&D credits, and international operations.</p>
+                </div>
+                <div class="industry-item">
+                    <h3>🏭 Manufacturing</h3>
+                    <p>Industry-specific compliance for manufacturers, including inventory accounting and production tax credits.</p>
+                </div>
+                <div class="industry-item">
+                    <h3>🏦 Financial Services</h3>
+                    <p>Comprehensive compliance for financial institutions, including regulatory reporting and Dodd-Frank requirements.</p>
+                </div>
+                <div class="industry-item">
+                    <h3>🏪 Retail</h3>
+                    <p>Multi-state sales tax compliance and inventory management for retail businesses.</p>
+                </div>
+                <div class="industry-item">
+                    <h3>🏗️ Real Estate</h3>
+                    <p>Specialized compliance for real estate investments, including 1031 exchanges and property tax issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ensure Full Tax Compliance</h2>
+                <p>Let our experts handle your compliance needs so you can focus on growing your business</p>
+                <a href="../contact.html" class="btn btn-primary btn-large">Schedule a Compliance Review</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/include-footer.js" defer></script>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

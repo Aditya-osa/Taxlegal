@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - TaxLegal</title>
+    <meta name="description" content="Comprehensive tax and legal services including tax advisory, litigation, and compliance solutions for individuals and businesses.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="icon" href="../favicon.ico">
+    <style>
+        /* Vertical Social Media Sidebar */
+        .social-sidebar {
+            position: fixed;
+            top: 30%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .social-sidebar a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 51, 102, 0.9);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        .social-sidebar a:hover {
+            background: #b71032;
+            border-color: #ffffff;
+            transform: translateX(-5px) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hide social sidebar on mobile */
+        @media (max-width: 768px) {
+            .social-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Vertical Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader" class="loader"></div>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">TaxLegal</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html" class="active">Services</a></li>
+                <li><a href="../team/index.html">Team</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="https://www.incometaxindia.gov.in/income-tax-calculator" target="_blank" class="btn btn-primary">Tax Calculator</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive tax and legal solutions tailored to your needs</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="overview-content">
+                <h2>Expert Tax & Legal Services</h2>
+                <p>At TaxLegal, we offer a comprehensive suite of tax and legal services designed to meet the diverse needs of individuals, businesses, and organizations. Our team of experienced professionals provides strategic guidance and practical solutions to help you navigate the complex world of taxation and regulation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="main-services">
+        <div class="container">
+            <div class="services-hero-grid">
+                <div class="service-hero-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Tax Advisory</h3>
+                    <p>Strategic tax planning and advisory services to optimize your tax position and ensure compliance.</p>
+                    <ul class="service-features">
+                        <li>Tax Planning & Strategy</li>
+                        <li>International Tax Services</li>
+                        <li>Estate & Trust Planning</li>
+                        <li>Business Tax Structuring</li>
+                    </ul>
+                    <a href="tax-advisory.html" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <div class="service-hero-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>Tax Litigation</h3>
+                    <p>Expert legal representation in tax disputes, audits, and litigation proceedings.</p>
+                    <ul class="service-features">
+                        <li>IRS Audit Representation</li>
+                        <li>Tax Court Litigation</li>
+                        <li>Appeals & Settlements</li>
+                        <li>Criminal Tax Defense</li>
+                    </ul>
+                    <a href="litigation.html" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <div class="service-hero-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Compliance Services</h3>
+                    <p>Comprehensive compliance solutions to meet all regulatory requirements and avoid penalties.</p>
+                    <ul class="service-features">
+                        <li>Tax Return Preparation</li>
+                        <li>Regulatory Compliance</li>
+                        <li>Risk Assessment</li>
+                        <li>Documentation & Reporting</li>
+                    </ul>
+                    <a href="compliance.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Services -->
+    <section class="specialized-services">
+        <div class="container">
+            <h2>Specialized Services</h2>
+            <div class="specialized-grid">
+                <div class="spec-service">
+                    <h3>🏢 Corporate Tax</h3>
+                    <p>Comprehensive corporate tax services including structuring, planning, and compliance for businesses of all sizes.</p>
+                </div>
+                <div class="spec-service">
+                    <h3>🌍 International Tax</h3>
+                    <p>Expert guidance on cross-border transactions, expatriate tax issues, and international compliance.</p>
+                </div>
+                <div class="spec-service">
+                    <h3>👤 Individual Tax</h3>
+                    <p>Personal tax planning and preparation services for high-net-worth individuals and families.</p>
+                </div>
+                <div class="spec-service">
+                    <h3>🏭 State & Local Tax</h3>
+                    <p>Multi-state tax compliance, nexus studies, and state tax planning strategies.</p>
+                </div>
+                <div class="spec-service">
+                    <h3>💼 M&A Tax</h3>
+                    <p>Tax due diligence and structuring for mergers, acquisitions, and business transactions.</p>
+                </div>
+                <div class="spec-service">
+                    <h3>🏛️ Nonprofit Tax</h3>
+                    <p>Specialized tax services for nonprofit organizations including exemption applications and compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process">
+        <div class="container">
+            <h2>Our Process</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Initial Consultation</h3>
+                    <p>We begin with a comprehensive consultation to understand your specific needs and objectives.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Analysis & Strategy</h3>
+                    <p>Our team conducts thorough analysis and develops a customized strategy tailored to your situation.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Implementation</h3>
+                    <p>We execute the strategy with precision, keeping you informed every step of the way.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Ongoing Support</h3>
+                    <p>We provide continuous support and guidance to ensure long-term success and compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section class="industries">
+        <div class="container">
+            <h2>Industries We Serve</h2>
+            <div class="industries-grid">
+                <div class="industry">
+                    <div class="industry-icon">🏦</div>
+                    <h3>Financial Services</h3>
+                </div>
+                <div class="industry">
+                    <div class="industry-icon">🏥</div>
+                    <h3>Healthcare</h3>
+                </div>
+                <div class="industry">
+                    <div class="industry-icon">🏭</div>
+                    <h3>Manufacturing</h3>
+                </div>
+                <div class="industry">
+                    <div class="industry-icon">💻</div>
+                    <h3>Technology</h3>
+                </div>
+                <div class="industry">
+                    <div class="industry-icon">🏪</div>
+                    <h3>Retail</h3>
+                </div>
+                <div class="industry">
+                    <div class="industry-icon">🏗️</div>
+                    <h3>Real Estate</h3>
+                </div>
+                <div class="industry">
+                    <div class="industry-icon">⚡</div>
+                    <h3>Energy</h3>
+                </div>
+                <div class="industry">
+                    <div class="industry-icon">🎓</div>
+                    <h3>Education</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Discover how our expert tax and legal services can benefit you or your business</p>
+                <a href="../contact.html" class="btn btn-primary btn-large">Schedule a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/include-footer.js" defer></script>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

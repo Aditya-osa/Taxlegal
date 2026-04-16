@@ -1,0 +1,129 @@
+/* TaxLegal Website - Responsive Design */
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-grid,
+    .who-we-are-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+
+    .hero {
+        padding: 120px 0 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container,
+    .topbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+    }
+
+    .nav ul.active {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .hero-left h1 {
+        font-size: 36px;
+    }
+
+    .hero-left h1::after {
+        left: -10px;
+        height: 40px;
+    }
+
+    .practice-areas-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-tag {
+        margin-left: 0;
+    }
+
+    .disclaimer-container {
+        padding: 20px 15px;
+    }
+    
+    .disclaimer-content {
+        padding: 25px;
+    }
+    
+    .disclaimer-logo {
+        font-size: 2.5rem;
+    }
+    
+    .disclaimer-title {
+        font-size: 1.5rem;
+    }
+    
+    .disclaimer-actions {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 100px 0 40px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .who-we-are,
+    .practice-areas,
+    .expert-team,
+    .contact-cta {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-left h1 {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-left p {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .practice-card,
+    .team-card {
+        padding: 30px 20px;
+    }
+}
