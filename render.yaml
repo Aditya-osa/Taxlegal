@@ -18,6 +18,10 @@ services:
         fromDatabase:
           name: taxlegal-db
           property: connectionString
+    disk:
+      name: taxlegal-storage
+      mountPath: /var/www/html/storage/app/public
+      sizeGB: 1
 
   # Frontend React Service (Static Site)
   - type: static
