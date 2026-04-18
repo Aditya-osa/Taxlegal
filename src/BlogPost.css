@@ -1,0 +1,154 @@
+.blog-post-page {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: var(--surface);
+  color: var(--on-surface);
+  min-height: 100vh;
+}
+
+.post-main {
+  padding: 8rem 1.5rem 6rem;
+}
+
+.post-article {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+}
+
+.post-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.post-category-tag {
+  display: inline-block;
+  color: var(--secondary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: center;
+}
+
+.post-author-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.author-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--on-surface);
+}
+
+.post-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-featured-image {
+  margin: 0 -4rem 3rem;
+  height: 500px;
+  overflow: hidden;
+}
+
+.post-featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 4rem;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content h2 {
+  font-size: 2rem;
+  margin: 2.5rem 0 1.5rem;
+  color: var(--primary-color);
+}
+
+.post-footer {
+  margin-top: 4rem;
+}
+
+.post-tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.post-tag {
+  background: var(--surface-container);
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--on-surface-variant);
+  font-weight: 600;
+}
+
+.post-footer hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-5px);
+}
+
+@media (max-width: 768px) {
+  .post-article {
+    padding: 2rem;
+  }
+  
+  .post-featured-image {
+    margin: 0 -2rem 2rem;
+    height: 300px;
+  }
+  
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .post-main {
+    padding-top: 6rem;
+  }
+}
