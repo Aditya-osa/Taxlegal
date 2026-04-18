@@ -22,9 +22,9 @@ services:
       sizeGB: 1
 
   # Frontend React Service (Static Site)
-  - type: static
+  - type: web
     name: taxlegal-frontend
-    env: node
+    runtime: static
     plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
