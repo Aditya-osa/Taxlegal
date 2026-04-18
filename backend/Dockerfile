@@ -42,8 +42,7 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 EXPOSE 80
 
 # Build script for migrations
-RUN chmod +x render-build.sh
+RUN chmod +x entrypoint.sh
 
-# We will run migrations in the start command or build script
-# Render's Docker start command
-CMD ["apache2-foreground"]
+# Run migrations and start apache
+CMD ["./entrypoint.sh"]
