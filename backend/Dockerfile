@@ -1,5 +1,5 @@
-FROM php:8.4-apache-bullseye
-# Build timestamp: 2025-04-19-17-45
+FROM php:8.4-apache-bookworm
+# Build timestamp: 2025-04-19-18-30
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
