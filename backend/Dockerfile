@@ -67,6 +67,7 @@ RUN echo '<h1>Apache is working!</h1>' > /var/www/html/public/test.html
 RUN echo '<?php echo "PHP is working!"; ?>' > /var/www/html/public/health.php
 RUN echo '<?php phpinfo(); ?>' > /var/www/html/public/info.php
 RUN echo '<?php echo "Current working directory: " . getcwd(); echo "<br>Document root: " . $_SERVER["DOCUMENT_ROOT"]; ?>' > /var/www/html/public/debug.php
+RUN echo '<?php echo "Files in public directory:<br>"; foreach(glob("*") as $file) echo "$file<br>"; ?>' > /var/www/html/public/files.php
 
 # Run migrations and start apache
 CMD ["./entrypoint.sh"]
