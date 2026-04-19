@@ -1,4 +1,20 @@
 services:
+  # MySQL Database
+  - type: pserv
+    name: taxlegal-db
+    env: docker
+    image: mysql:8.0
+    plan: free
+    envVars:
+      - key: MYSQL_DATABASE
+        value: taxlegal_blog
+      - key: MYSQL_USER
+        value: taxlegal_user
+      - key: MYSQL_PASSWORD
+        value: taxlegal_password
+      - key: MYSQL_ROOT_PASSWORD
+        value: root_password
+    
   # Backend Laravel Service
   - type: web
     name: taxlegal-backend
@@ -14,8 +30,19 @@ services:
         value: production
       - key: DB_CONNECTION
         value: mysql
-      - key: DB_URL
-        sync: false # Paste your Clever Cloud MySQL URL here
+      - key: DB_HOST
+        fromService:
+          type: pserv
+          name: taxlegal-db
+          property: host
+      - key: DB_PORT
+        value: 3306
+      - key: DB_DATABASE
+        value: taxlegal_blog
+      - key: DB_USERNAME
+        value: taxlegal_user
+      - key: DB_PASSWORD
+        value: taxlegal_password
 
 
   # Frontend React Service (Static Site)
