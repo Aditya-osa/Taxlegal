@@ -25,6 +25,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// Simple ping route for testing
+Route::get('/ping', function () {
+    return response()->json([
+        'message' => 'pong',
+        'status' => 'ok',
+        'timestamp' => now()->toISOString()
+    ]);
+});
+
 // Authentication Routes
 Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout']);
@@ -32,7 +41,7 @@ Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logo
 // Public Blog Routes
 Route::prefix('blog')->group(function () {
     // Posts
-    Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+    Route::get('/posts', [PostController::class, 'index'])->name('blog.posts.index');
     Route::get('/posts/featured', [PostController::class, 'featured']);
     Route::get('/posts/popular', [PostController::class, 'popular']);
     Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
