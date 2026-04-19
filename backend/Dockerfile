@@ -47,5 +47,8 @@ EXPOSE 80
 # Build script for migrations
 RUN chmod +x entrypoint.sh
 
+# Create a simple health check file
+RUN echo '<?php echo "Laravel is working!"; ?>' > /var/www/html/public/health.php
+
 # Run migrations and start apache
 CMD ["./entrypoint.sh"]
