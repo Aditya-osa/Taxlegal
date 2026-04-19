@@ -27,8 +27,8 @@ WORKDIR /var/www/html
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Copy project files
-COPY . .
+# Copy project files from backend directory
+COPY ./backend/ .
 
 # Install dependencies
 RUN composer install --no-dev --optimize-autoloader
