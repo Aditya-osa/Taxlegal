@@ -2,8 +2,8 @@ services:
   # Backend Laravel Service
   - type: web
     name: taxlegal-backend
-    env: docker
-    dockerContext: backend
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
     plan: free
     envVars:
       - key: APP_KEY
