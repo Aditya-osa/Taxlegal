@@ -1,4 +1,4 @@
-FROM php:8.4-apache
+FROM php:8.4-apache-bullseye
 # Build timestamp: 2025-04-19-17-45
 
 # Install system dependencies
