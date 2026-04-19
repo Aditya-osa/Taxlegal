@@ -1,5 +1,5 @@
 FROM php:8.4-apache
-# Force cache rebuild - v2
+# Build timestamp: 2025-04-19-17-45
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
