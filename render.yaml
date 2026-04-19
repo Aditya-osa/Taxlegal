@@ -1,5 +1,5 @@
 services:
-  # MySQL Database
+  # MySQL Database - Redeploy
   - type: pserv
     name: taxlegal-db
     env: docker
