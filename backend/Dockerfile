@@ -28,7 +28,7 @@ WORKDIR /var/www/html
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Copy project files from backend directory
-COPY ./backend/ .
+COPY ./taxlegal/backend/ .
 
 # Install dependencies
 RUN composer install --no-dev --optimize-autoloader
