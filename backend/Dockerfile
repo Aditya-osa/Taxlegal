@@ -24,11 +24,13 @@ RUN a2enmod rewrite
 # Set working directory
 WORKDIR /var/www/html
 
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
 # Copy project files
 COPY . .
 
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+# Install dependencies
 RUN composer install --no-dev --optimize-autoloader
 
 # Set permissions
