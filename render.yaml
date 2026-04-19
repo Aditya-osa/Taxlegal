@@ -23,7 +23,7 @@ services:
     plan: free
     envVars:
       - key: APP_KEY
-        sync: false # Set this in Render dashboard or let it be generated
+        generateValue: true
       - key: APP_DEBUG
         value: false
       - key: APP_ENV
